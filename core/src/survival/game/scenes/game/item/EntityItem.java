@@ -3,6 +3,7 @@ package survival.game.scenes.game.item;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.Filter;
+//import com.sun.istack.internal.Nullable;
 import survival.game.scenes.game.GameID;
 import survival.game.scenes.game.GameScene;
 import survival.game.scenes.game.entity.Entity;
@@ -10,8 +11,6 @@ import survival.game.scenes.game.entity.Player;
 import survival.game.utills.box2D.Box2DTag;
 
 import java.util.Random;
-
-//import com.sun.istack.internal.Nullable;
 
 /**
  * Created by viktorstrate on 06/08/2015.

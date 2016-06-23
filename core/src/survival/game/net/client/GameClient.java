@@ -1,18 +1,18 @@
 package survival.game.net.client;
 
 import com.badlogic.gdx.math.Vector2;
+//import com.sun.istack.internal.Nullable;
 import survival.game.net.GameConnection;
-import survival.game.net.packets.*;
 import survival.game.scenes.game.GameScene;
 import survival.game.scenes.game.entity.Player;
+import survival.game.net.packets.*;
 
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.net.DatagramPacket;
 import java.net.InetAddress;
 import java.util.ArrayList;
-
-//import com.sun.istack.internal.Nullable;
+import java.util.Random;
 
 /**
  * Created by viktorstrate on 01/05/16.
@@ -26,6 +26,8 @@ public class GameClient {
     private ArrayList<GameClientConnection> connections;
     private String secret;
     private String clientId;
+
+    private boolean userNumbers = true;
 
     private ClientUDPListener UDPListener;
     private ClientTCPListener TCPListener;
@@ -43,8 +45,18 @@ public class GameClient {
 
         System.out.println("Client listening on 127.0.0.1:"+UDPListener.getSocket().getLocalPort());
 
-        Packet02Connect connectPacket = new Packet02Connect("bob");
+        if(userNumbers) {
+            Random rand = new Random();
+            int usernumber = rand.nextInt(50) + 1;
+
+
+        Packet02Connect connectPacket = new Packet02Connect("bob" + usernumber);
         sendDataTCP(connectPacket.getData());
+        }
+        else {
+            Packet02Connect connectPacket = new Packet02Connect("bob");
+            sendDataTCP(connectPacket.getData());
+        }
     }
 
     public void parseData(byte[] data, GameClientConnection connection){

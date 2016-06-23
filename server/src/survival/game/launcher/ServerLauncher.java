@@ -1,7 +1,7 @@
 package survival.game.launcher;
 
 
-import dk.qpqp.net.server.GameServer;
+import survival.game.net.server.GameServer;
 
 /**
  * Created by viktorstrate on 18/04/16.

@@ -1,7 +1,7 @@
 package survival.game;
 
-import survival.game.scenes.Scene;
 import survival.game.scenes.game.GameScene;
+import survival.game.scenes.Scene;
 
 /**
  * Created by viktorstrate on 03/08/2015.

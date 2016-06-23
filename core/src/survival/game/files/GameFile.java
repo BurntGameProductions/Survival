@@ -2,10 +2,10 @@ package survival.game.files;
 
 import com.badlogic.gdx.math.Vector2;
 import survival.game.scenes.game.GameID;
+import survival.game.scenes.game.terrain.objects.GameObject;
 import survival.game.scenes.game.GameScene;
 import survival.game.scenes.game.entity.Player;
 import survival.game.scenes.game.item.entities.EntityStone;
-import survival.game.scenes.game.terrain.objects.GameObject;
 import survival.game.scenes.game.terrain.objects.Stone;
 import survival.game.scenes.game.terrain.objects.Tree;
 

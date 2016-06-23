@@ -5,14 +5,13 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.*;
+//import com.sun.istack.internal.Nullable;
 import survival.game.scenes.game.GameID;
 import survival.game.scenes.game.GameScene;
 import survival.game.scenes.game.Graphic;
 import survival.game.utills.Constants;
 import survival.game.utills.box2D.Box2DTag;
 import survival.game.utills.box2D.CustomUserData;
-
-//import com.sun.istack.internal.Nullable;
 
 /**
  * Created by viktorstrate on 04/08/2015.

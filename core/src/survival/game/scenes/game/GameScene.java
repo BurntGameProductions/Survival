@@ -116,7 +116,7 @@ public class GameScene extends Scene {
         viewport.apply();
 
 
-        Gdx.graphics.setTitle("FPS "+ Gdx.graphics.getFramesPerSecond()+" Game Objects "+gameObjects.size());
+        Gdx.graphics.setTitle("FPS "+Gdx.graphics.getFramesPerSecond()+" Game Objects "+gameObjects.size());
 
     }
 

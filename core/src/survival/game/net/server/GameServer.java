@@ -1,14 +1,11 @@
 package survival.game.net.server;
 
 //import com.sun.istack.internal.Nullable;
-
 import survival.game.net.packets.*;
 
 import java.io.IOException;
-import java.net.DatagramPacket;
+import java.net.*;
 import java.util.ArrayList;
-
-import static survival.game.net.packets.Packet.PacketType.CONNECT;
 
 /**
  * Created by viktorstrate on 01/05/16.

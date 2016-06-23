@@ -5,12 +5,11 @@ import com.badlogic.gdx.physics.box2d.BodyDef;
 import com.badlogic.gdx.physics.box2d.Filter;
 import com.badlogic.gdx.physics.box2d.FixtureDef;
 import com.badlogic.gdx.physics.box2d.PolygonShape;
-import survival.game.scenes.game.GameID;
-import survival.game.scenes.game.GameScene;
-import survival.game.scenes.game.terrain.objects.GameObject;
-import survival.game.utills.Constants;
-
 //import com.sun.istack.internal.Nullable;
+import survival.game.scenes.game.GameID;
+import survival.game.scenes.game.terrain.objects.GameObject;
+import survival.game.scenes.game.GameScene;
+import survival.game.utills.Constants;
 
 /**
  * Created by viktorstrate on 03/08/2015.
