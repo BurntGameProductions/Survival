@@ -11,7 +11,7 @@ public class DesktopLauncher {
 		FPSLogger fpsLogger = new FPSLogger();
 		config.width = Game.WIDTH;
         config.height = Game.HEIGHT;
-		config.title = "Survivalist + FPS ";
+		config.title = "Survival game + FPS ";
 
         new LwjglApplication(new Game(), config);
 	}
