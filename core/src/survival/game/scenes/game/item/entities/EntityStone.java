@@ -7,10 +7,6 @@ import survival.game.scenes.game.item.Material;
 import survival.game.utills.box2D.Box2DTag;
 import survival.game.utills.box2D.CustomUserData;
 
-/**
- * Created by viktorstrate on 06/08/2015.
- * A stone entity
- */
 public class EntityStone extends EntityItem {
 
     public EntityStone(int x, int y, GameScene gameScene, boolean hasVelocity){

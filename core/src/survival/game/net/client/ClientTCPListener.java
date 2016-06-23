@@ -6,9 +6,6 @@ import java.io.OutputStreamWriter;
 import java.net.InetAddress;
 import java.net.Socket;
 
-/**
- * Created by viktorstrate on 04/05/16.
- */
 public class ClientTCPListener implements Runnable {
 
     private GameClient gameClient;

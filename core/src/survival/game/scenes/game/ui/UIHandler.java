@@ -8,10 +8,6 @@ import com.badlogic.gdx.utils.viewport.Viewport;
 import survival.game.Game;
 import survival.game.scenes.game.GameScene;
 
-/**
- * Created by viktorstrate on 06/08/2015.
- * Renders and handles the UI
- */
 public class UIHandler extends ApplicationAdapter {
 
     private GameScene gameScene;

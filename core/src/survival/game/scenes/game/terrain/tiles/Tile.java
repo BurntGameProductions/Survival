@@ -3,9 +3,6 @@ package survival.game.scenes.game.terrain.tiles;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
-/**
- * Created by viktorstrate on 04/05/16.
- */
 public abstract class Tile {
 
     public enum TileType {

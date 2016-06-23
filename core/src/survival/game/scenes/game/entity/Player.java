@@ -16,10 +16,6 @@ import survival.game.utills.Textures;
 import survival.game.utills.box2D.Box2DTag;
 import survival.game.utills.box2D.CustomUserData;
 
-/**
- * Created by viktorstrate on 03/08/2015.
- * The player entity
- */
 public class Player extends Entity {
 
     private Texture texture;

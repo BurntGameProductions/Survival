@@ -4,9 +4,7 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-/**
- * Created by viktorstrate on 04/05/16.
- */
+
 public class ServerTCPListener implements Runnable {
 
     private GameServer server;

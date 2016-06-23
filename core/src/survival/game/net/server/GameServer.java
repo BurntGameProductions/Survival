@@ -7,9 +7,6 @@ import java.io.IOException;
 import java.net.*;
 import java.util.ArrayList;
 
-/**
- * Created by viktorstrate on 01/05/16.
- */
 public class GameServer {
 
     private int port;

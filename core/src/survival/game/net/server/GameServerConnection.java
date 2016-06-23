@@ -10,9 +10,7 @@ import java.net.InetAddress;
 import java.net.Socket;
 import java.util.UUID;
 
-/**
- * Created by viktorstrate on 01/05/16.
- */
+
 public class GameServerConnection extends GameConnection implements Runnable {
     private InetAddress ip;
     private int portTCP;

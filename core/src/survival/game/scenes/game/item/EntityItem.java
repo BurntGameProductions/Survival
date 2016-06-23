@@ -12,10 +12,6 @@ import survival.game.utills.box2D.Box2DTag;
 
 import java.util.Random;
 
-/**
- * Created by viktorstrate on 06/08/2015.
- * An item on the ground
- */
 public class EntityItem extends Entity {
 
     private Material material;

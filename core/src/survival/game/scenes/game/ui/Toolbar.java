@@ -4,10 +4,6 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import survival.game.scenes.game.GameScene;
 import survival.game.scenes.game.Graphic;
 
-/**
- * Created by viktorstrate on 05/08/2015.
- * Renders the toolbar
- */
 public class Toolbar implements Graphic {
 
     private GameScene gameScene;

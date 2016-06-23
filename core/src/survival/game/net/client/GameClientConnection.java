@@ -5,10 +5,6 @@ import survival.game.net.GameConnection;
 import survival.game.net.packets.Packet00Login;
 import survival.game.scenes.game.entity.Player;
 
-/**
- * An object containing information about the connection for the client
- * Created by viktorstrate on 01/05/16.
- */
 public class GameClientConnection extends GameConnection {
     private GameClient gameClient;
     private Player player;

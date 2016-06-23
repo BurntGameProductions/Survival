@@ -27,10 +27,6 @@ import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/**
- * Created by viktorstrate on 03/08/2015.
- * The game scene
- */
 public class GameScene extends Scene {
 
     private OrthographicCamera gameCamera;

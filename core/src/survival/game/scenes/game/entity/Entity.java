@@ -11,10 +11,6 @@ import survival.game.scenes.game.terrain.objects.GameObject;
 import survival.game.scenes.game.GameScene;
 import survival.game.utills.Constants;
 
-/**
- * Created by viktorstrate on 03/08/2015.
- * A template for an entity
- */
 public abstract class Entity extends GameObject {
 
 

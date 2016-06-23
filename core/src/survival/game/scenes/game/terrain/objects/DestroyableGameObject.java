@@ -8,10 +8,6 @@ import survival.game.utills.Constants;
 
 import java.util.ArrayList;
 
-/**
- * Created by viktorstrate on 07/08/2015.
- * A GameObject that is destroyable, like stones or trees
- */
 public abstract class DestroyableGameObject extends GameObject {
 
     protected float destroyTime = 0.2f; // time it takes to destroy in sec

@@ -17,9 +17,6 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/**
- * Created by viktorstrate on 17/04/16.
- */
 public class GameFile {
 
     private ArrayList<GameObject> gameObjects;

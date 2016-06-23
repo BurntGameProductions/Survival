@@ -1,9 +1,5 @@
 package survival.game.scenes.game.item;
 
-/**
- * Created by viktorstrate on 06/08/2015.
- * An item in the inventory
- */
 public class InventoryItem {
 
     private Material material;

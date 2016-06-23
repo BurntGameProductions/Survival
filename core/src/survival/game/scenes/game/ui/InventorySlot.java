@@ -10,10 +10,6 @@ import survival.game.scenes.game.item.Material;
 import survival.game.utills.Constants;
 import survival.game.utills.Textures;
 
-/**
- * Created by viktorstrate on 05/08/2015.
- * Renders a toolbar background
- */
 public class InventorySlot {
 
     private Texture texture, textureSelected;

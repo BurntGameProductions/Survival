@@ -3,10 +3,6 @@ package survival.game.scenes.game.terrain.generators;
 import survival.game.scenes.game.GameScene;
 import survival.game.scenes.game.terrain.objects.Tree;
 
-/**
- * Created by viktorstrate on 05/08/2015.
- * Randomly generates {@link Tree} object in the world
- */
 public class TreeGenerator extends ObjectGenerator {
 
 

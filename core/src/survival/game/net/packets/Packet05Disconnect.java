@@ -1,8 +1,5 @@
 package survival.game.net.packets;
 
-/**
- * Created by viktorstrate on 04/05/16.
- */
 public class Packet05Disconnect extends Packet {
 
     private String secretOrId;

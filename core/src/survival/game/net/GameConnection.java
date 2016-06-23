@@ -1,8 +1,5 @@
 package survival.game.net;
 
-/**
- * Created by viktorstrate on 02/05/16.
- */
 public class GameConnection {
     protected String username;
     protected float x, y;

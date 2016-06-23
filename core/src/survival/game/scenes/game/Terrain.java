@@ -6,10 +6,6 @@ import survival.game.scenes.game.terrain.generators.StoneGenerator;
 import survival.game.scenes.game.terrain.generators.TerrainGenerator;
 import survival.game.scenes.game.terrain.tiles.Tile;
 
-/**
- * Created by viktorstrate on 04/08/2015.
- * Renders the terrain from a tiled map
- */
 public class Terrain {
     //private TiledMap map;
     private Tile[][] map;

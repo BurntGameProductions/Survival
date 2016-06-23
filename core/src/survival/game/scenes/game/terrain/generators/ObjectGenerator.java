@@ -3,10 +3,6 @@ package survival.game.scenes.game.terrain.generators;
 import survival.game.scenes.game.terrain.objects.GameObject;
 import survival.game.scenes.game.GameScene;
 
-/**
- * Created by viktorstrate on 05/08/2015.
- * Abstract class for {@link GameObject} generators
- */
 public abstract class ObjectGenerator {
 
     protected GameScene gameScene;

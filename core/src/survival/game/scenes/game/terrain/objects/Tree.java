@@ -7,10 +7,6 @@ import survival.game.scenes.game.GameID;
 import survival.game.scenes.game.GameScene;
 import survival.game.utills.Textures;
 
-/**
- * Created by viktorstrate on 05/08/2015.
- * A tree object in the scene
- */
 public class Tree extends DestroyableGameObject {
 
     private Texture texture;

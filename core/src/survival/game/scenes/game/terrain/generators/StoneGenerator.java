@@ -9,10 +9,6 @@ import survival.game.scenes.game.terrain.tiles.Tile;
 import java.util.ArrayList;
 import java.util.Random;
 
-/**
- * Created by viktorstrate on 04/08/2015.
- * Randomly generates {@link Stone} object in the world
- */
 public class StoneGenerator {
 
     private static final int MAX_STONE_COUNT = 500;

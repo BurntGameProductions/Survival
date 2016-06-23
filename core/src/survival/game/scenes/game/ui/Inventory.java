@@ -6,10 +6,6 @@ import survival.game.scenes.game.Graphic;
 import survival.game.scenes.game.item.InventoryItem;
 import survival.game.scenes.game.item.Material;
 
-/**
- * Created by viktorstrate on 06/08/2015.
- * Renders and handles the inventory
- */
 public class Inventory implements Graphic {
 
     private InventorySlot[] items;

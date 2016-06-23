@@ -9,10 +9,6 @@ import survival.game.scenes.game.item.Material;
 import survival.game.scenes.game.item.entities.EntityStone;
 import survival.game.utills.Textures;
 
-/**
- * Created by viktorstrate on 04/08/2015.
- * A stone object in the scene
- */
 public class Stone extends DestroyableGameObject {
 
     private Texture texture;

@@ -1,8 +1,5 @@
 package survival.game.scenes.game;
 
-/**
- * Created by viktorstrate on 17/04/16.
- */
 public enum GameID {
     PLAYER,
 

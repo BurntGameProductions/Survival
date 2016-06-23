@@ -3,9 +3,6 @@ package survival.game.scenes.game.terrain.generators;
 import survival.game.scenes.game.terrain.tiles.Tile;
 import survival.game.scenes.game.terrain.tiles.TileGrass;
 
-/**
- * Created by viktorstrate on 04/05/16.
- */
 public class TerrainGenerator {
     public static final int WIDTH = 200;
     public static final int HEIGHT = 200;

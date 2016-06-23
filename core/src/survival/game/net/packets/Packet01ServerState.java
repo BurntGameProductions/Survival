@@ -7,9 +7,6 @@ import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/**
- * Created by viktorstrate on 01/05/16.
- */
 public class Packet01ServerState extends Packet {
 
     GameConnection[] connections;

@@ -14,9 +14,6 @@ import java.net.InetAddress;
 import java.util.ArrayList;
 import java.util.Random;
 
-/**
- * Created by viktorstrate on 01/05/16.
- */
 public class GameClient {
 
 

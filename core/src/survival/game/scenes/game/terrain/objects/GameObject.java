@@ -13,10 +13,6 @@ import survival.game.utills.Constants;
 import survival.game.utills.box2D.Box2DTag;
 import survival.game.utills.box2D.CustomUserData;
 
-/**
- * Created by viktorstrate on 04/08/2015.
- * Abstract class for game object, like trees and stones
- */
 public abstract class GameObject implements Graphic {
 
     protected int width, height;

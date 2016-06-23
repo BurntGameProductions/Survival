@@ -4,9 +4,6 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import survival.game.utills.Textures;
 
-/**
- * Created by viktorstrate on 04/05/16.
- */
 public class TileGrass extends Tile {
 
     public TileGrass() {

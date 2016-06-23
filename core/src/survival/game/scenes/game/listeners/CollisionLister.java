@@ -6,10 +6,6 @@ import survival.game.scenes.game.item.EntityItem;
 import survival.game.utills.box2D.Box2DTag;
 import survival.game.utills.box2D.CustomUserData;
 
-/**
- * Created by viktorstrate on 07/08/2015.
- * Listens for collisions
- */
 public class CollisionLister implements ContactListener {
 
     @Override

@@ -10,10 +10,6 @@ import survival.game.utills.box2D.Box2DTag;
 
 import java.util.ArrayList;
 
-/**
- * Created by viktorstrate on 09/08/2015.
- * Handles light in the scene
- */
 public class LightHandler implements Graphic {
 
     private RayHandler rayHandler;

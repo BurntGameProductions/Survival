@@ -3,9 +3,6 @@ package survival.game.net.packets;
 import java.net.DatagramPacket;
 import java.util.Arrays;
 
-/**
- * Created by viktorstrate on 01/05/16.
- */
 public abstract class Packet {
 
     protected String[] parts;

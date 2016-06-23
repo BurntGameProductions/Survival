@@ -1,8 +1,5 @@
 package survival.game.net.packets;
 
-/**
- * Created by viktorstrate on 01/05/16.
- */
 public class Packet00Login extends Packet {
 
     private String username;

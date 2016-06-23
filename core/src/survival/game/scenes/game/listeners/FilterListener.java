@@ -6,10 +6,6 @@ import com.badlogic.gdx.physics.box2d.Fixture;
 import survival.game.utills.box2D.Box2DTag;
 import survival.game.utills.box2D.CustomUserData;
 
-/**
- * Created by viktorstrate on 07/08/2015.
- * Box 2D Filter Listener
- */
 public class FilterListener implements ContactFilter {
     @Override
     public boolean shouldCollide(Fixture fixtureA, Fixture fixtureB) {

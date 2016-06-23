@@ -3,10 +3,6 @@ package survival.game;
 import survival.game.scenes.game.GameScene;
 import survival.game.scenes.Scene;
 
-/**
- * Created by viktorstrate on 03/08/2015.
- * Handles the different scenes in the game
- */
 public class SceneManager extends Scene {
 
 
