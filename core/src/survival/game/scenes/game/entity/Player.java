@@ -16,6 +16,8 @@ import survival.game.utills.Textures;
 import survival.game.utills.box2D.Box2DTag;
 import survival.game.utills.box2D.CustomUserData;
 
+import static com.badlogic.gdx.Gdx.app;
+
 public class Player extends Entity {
 
     private Texture texture;
@@ -67,6 +69,23 @@ public class Player extends Entity {
             }
             if (Gdx.input.isKeyPressed(Input.Keys.S)) {
                 velocity.y -= 1;
+            }
+            /** I am only doing it like this for now as i cant remember how to do an OR**/
+            if (Gdx.input.isKeyPressed(Input.Keys.LEFT)) {
+                velocity.x -= 1;
+            }
+            if (Gdx.input.isKeyPressed(Input.Keys.RIGHT)) {
+                velocity.x += 1;
+            }
+            if (Gdx.input.isKeyPressed(Input.Keys.UP)) {
+                velocity.y += 1;
+            }
+            if (Gdx.input.isKeyPressed(Input.Keys.DOWN)) {
+                velocity.y -= 1;
+            }
+            if (Gdx.input.isKeyPressed(Input.Keys.ESCAPE)) {
+                /**To make it quick and easy for now... **/
+                app.exit();
             }
             body.applyForce(velocity.scl(SPEED), new Vector2(0, 0), true);
             if(!lastPosition.epsilonEquals(position, 0.1f) && lastMovePacketTime+1000/60 < System.currentTimeMillis()){
