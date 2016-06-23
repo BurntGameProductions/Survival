@@ -45,15 +45,17 @@ public class GameClient {
 
         System.out.println("Client listening on 127.0.0.1:"+UDPListener.getSocket().getLocalPort());
 
+        /** This can be useful for if we have a single player option available.**/
         if(userNumbers) {
             Random rand = new Random();
             int usernumber = rand.nextInt(50) + 1;
 
-
+        /**Random number untill we setup a GUI**/
         Packet02Connect connectPacket = new Packet02Connect("bob" + usernumber);
         sendDataTCP(connectPacket.getData());
         }
         else {
+            /** Incase we ever use single player.**/
             Packet02Connect connectPacket = new Packet02Connect("bob");
             sendDataTCP(connectPacket.getData());
         }
