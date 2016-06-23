@@ -9,6 +9,8 @@ public class SceneManager extends Scene {
     private Scene activeScene;
 
     public SceneManager() {
+        /**This here tells what scene is the scene to load on start.**/
+        //TODO: Make a main menu.
         activeScene = new GameScene();
     }
 
