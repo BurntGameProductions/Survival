@@ -45,12 +45,9 @@ public class Terrain {
 
         // Generate Stones
         for(int i = 0; i < 500; i++){
-            scene.addGameObject(StoneGenerator.generate(map, scene));
-        }
-        for(int i = 0; i < 600; i++){
-            scene.addGameObject(TreeGenerator.generate(map, scene));
-        }
-
+	  scene.addGameObject(TreeGenerator.generate(map, scene));  
+          scene.addGameObject(StoneGenerator.generate(map, scene));
+        }:
     }
 
     public void render(SpriteBatch spriteBatch) {
