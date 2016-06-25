@@ -5,6 +5,6 @@ import survival.game.net.server.GameServer;
 
 public class ServerLauncher {
     public static void main(String[] args) {
-        new GameServer(5765);
+        new GameServer(4357);
     }
 }
