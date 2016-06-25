@@ -24,7 +24,7 @@ public class GameClient {
     private String secret;
     private String clientId;
 
-    private boolean userNumbers = true;
+    private boolean isMultiplayer = true;
 
     private ClientUDPListener UDPListener;
     private ClientTCPListener TCPListener;
@@ -43,7 +43,7 @@ public class GameClient {
         System.out.println("Client listening on 127.0.0.1:"+UDPListener.getSocket().getLocalPort());
 
         /** This can be useful for if we have a single player option available.**/
-        if(userNumbers) {
+        if(isMultiplayer) {
             Random rand = new Random();
             int usernumber = rand.nextInt(50) + 1;
 
