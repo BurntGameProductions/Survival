@@ -7,9 +7,9 @@ public class TileDirt extends Tile {
 
 	public TileDirt() {
 		super(TileType.DIRT);
-		Texture grassTexture = Textures.TILE_GRASS.getTexture();
-		int textures = grassTexture.getWidth()/SIZE;
+		Texture dirtTexture = Textures.TILE_DIRT.getTexture();
+		int textures = dirtTexture.getWidth()/SIZE;
 		int x = (int)Math.ceil(Math.random()*textures);
-		texture = new TextureRegion(grassTexture, x*SIZE, 0, SIZE, SIZE);
+		texture = new TextureRegion(dirtTexture, x*SIZE, 0, SIZE, SIZE);
 	}
 }
