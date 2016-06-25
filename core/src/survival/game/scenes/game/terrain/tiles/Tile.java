@@ -6,7 +6,8 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 public abstract class Tile {
 
     public enum TileType {
-        GRASS
+        GRASS,
+        DIRT
     }
 
     protected TileType type;

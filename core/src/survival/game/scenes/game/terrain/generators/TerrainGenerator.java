@@ -11,6 +11,7 @@ public class TerrainGenerator {
 
         Tile[][] tiles = new Tile[WIDTH][HEIGHT];
 
+        //TODO: ADD TREES TO SPAWN TOO...
         for(int x = 0; x < WIDTH; x++){
             for(int y = 0; y < HEIGHT; y++){
                 tiles[x][y] = new TileGrass();

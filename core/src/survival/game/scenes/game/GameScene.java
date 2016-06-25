@@ -87,7 +87,7 @@ public class GameScene extends Scene {
 
         // Connect to the server
         try {
-            networkClient = new GameClient(InetAddress.getByName("localhost"), 5765, this);
+            networkClient = new GameClient(InetAddress.getByName("localhost"), 4357, this);
         } catch (UnknownHostException e) {
             e.printStackTrace();
         }
