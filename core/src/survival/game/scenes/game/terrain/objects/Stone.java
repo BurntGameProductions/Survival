@@ -9,6 +9,8 @@ import survival.game.scenes.game.item.Material;
 import survival.game.scenes.game.item.entities.EntityStone;
 import survival.game.utills.Textures;
 
+import java.util.Random;
+
 public class Stone extends DestroyableGameObject {
 
     private Texture texture;
@@ -21,7 +23,7 @@ public class Stone extends DestroyableGameObject {
 
         texture = Textures.OBJECT_STONE.getTexture();
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < new Random().nextInt(5); i++) {
             drops.add(new EntityStone(gameScene, Material.STONE));
         }
     }
