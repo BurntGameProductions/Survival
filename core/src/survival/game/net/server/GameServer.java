@@ -17,7 +17,7 @@ public class GameServer {
 
     public GameServer(int port) {
         this.port = port;
-        connections = new ArrayList<>();
+        connections = new ArrayList<GameServerConnection>();
 
 
         System.out.println("Server listening on 127.0.0.1:" + port);

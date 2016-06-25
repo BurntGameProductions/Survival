@@ -69,13 +69,13 @@ public class GameScene extends Scene {
         //world.setContactFilter(new FilterListener());
         //world.setContactListener(collisionLister);
         b2dr = new Box2DDebugRenderer();
-        bodiesToRemove = new ArrayList<>();
+        bodiesToRemove = new ArrayList<Body>();
 
         lightHandler = new LightHandler(this);
 
-        gameObjects = new ArrayList<>();
-        gameObjectsToRemove = new ArrayList<>();
-        gameObjectsToAdd = new ArrayList<>();
+        gameObjects = new ArrayList<GameObject>();
+        gameObjectsToRemove = new ArrayList<GameObject>();
+        gameObjectsToAdd = new ArrayList<GameObject>();
 
         //setPlayer(new Player(64 * 32, 64 * 32, this, true, id));
 

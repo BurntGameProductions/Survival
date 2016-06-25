@@ -22,9 +22,9 @@ public class LightHandler implements Graphic {
         rayHandler = new RayHandler(gameScene.getWorld());
         rayHandler.setAmbientLight(0.1f);
         this.gameScene = gameScene;
-        lights = new ArrayList<>();
-        lightsToAdd = new ArrayList<>();
-        lightsToRemove = new ArrayList<>();
+        lights = new ArrayList<Light>();
+        lightsToAdd = new ArrayList<Light>();
+        lightsToRemove = new ArrayList<Light>();
     }
 
     @Override
