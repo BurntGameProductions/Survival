@@ -27,7 +27,7 @@ public class Stone extends DestroyableGameObject {
 
         for (int i = 0; i < dropnumber; i++) {
             drops.add(new EntityStone(gameScene, Material.STONE));
-        }
+       }
     }
 
     @Override
