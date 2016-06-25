@@ -7,7 +7,7 @@ import com.badlogic.gdx.graphics.Texture;
 import survival.game.scenes.game.GameID;
 import survival.game.scenes.game.GameScene;
 import survival.game.scenes.game.item.Material;
-//import survival.game.scenes.game.item.entities.EntityTree;
+import survival.game.scenes.game.item.entities.EntityTree;
 import survival.game.utills.Textures;
 
 import java.util.Random;
@@ -22,12 +22,12 @@ public class Tree extends DestroyableGameObject {
 
 	this.gameScene = gameScene;
 
-	//texture = Textures.OBJECTS_TREE.getTexture();
+	texture = Textures.OBJECT_TREE.getTexture();
 	Random rand = new Random();
 	int dropnumber = rand.nextInt(5) + 1;
 
 	for (int i = 0; i < dropnumber; i++) {
-	 //   drops.add(new EntityTree(gameScene, Material.TREE));
+	    drops.add(new EntityTree(gameScene, Material.TREE));
 	}
    }
 

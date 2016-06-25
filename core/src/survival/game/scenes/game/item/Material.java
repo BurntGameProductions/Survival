@@ -5,7 +5,8 @@ import com.badlogic.gdx.graphics.Texture;
 public enum Material {
     STONE(new Texture("images/items/rock.png"), 50, "Stone"),
     IRON(new Texture("images/objects/iron.png"), 50, "Iron"),
-    TORCH(new Texture("images/items/torch.png"), 1, "Torch");
+    TORCH(new Texture("images/items/torch.png"), 1, "Torch"),
+    TREE(new Texture("images/items/rock.png"), 50, "Tree");
 
     private Texture texture;
     private int maxStackSize;

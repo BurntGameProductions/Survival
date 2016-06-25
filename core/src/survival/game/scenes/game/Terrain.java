@@ -4,6 +4,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import survival.game.scenes.game.terrain.generators.StoneGenerator;
 import survival.game.scenes.game.terrain.generators.TerrainGenerator;
+import survival.game.scenes.game.terrain.generators.TreeGenerator;
 import survival.game.scenes.game.terrain.tiles.Tile;
 
 public class Terrain {
@@ -45,6 +46,9 @@ public class Terrain {
         // Generate Stones
         for(int i = 0; i < 500; i++){
             scene.addGameObject(StoneGenerator.generate(map, scene));
+        }
+        for(int i = 0; i < 600; i++){
+            scene.addGameObject(TreeGenerator.generate(map, scene));
         }
 
     }
