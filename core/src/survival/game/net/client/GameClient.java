@@ -45,7 +45,7 @@ public class GameClient {
         /** This can be useful for if we have a single player option available.**/
         if(isMultiplayer) {
             Random rand = new Random();
-            int usernumber = rand.nextInt(50) + 1;
+            int usernumber = rand.nextInt(999) + 1;
 
         /**Random number untill we setup a GUI**/
         Packet02Connect connectPacket = new Packet02Connect("bob" + usernumber);
