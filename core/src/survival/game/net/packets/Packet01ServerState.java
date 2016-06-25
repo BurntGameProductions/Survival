@@ -19,7 +19,7 @@ public class Packet01ServerState extends Packet {
     public Packet01ServerState(byte[] data){
         super(data);
 
-        ArrayList<GameConnection> list = new ArrayList<>();
+        ArrayList<GameConnection> list = new ArrayList<GameConnection>();
         for(int i = 0; i < parts.length; i+=4){
             list.add(new GameConnection(parts[i], Float.parseFloat(parts[i+1]), Float.parseFloat(parts[i+2]), parts[+3]));
         }

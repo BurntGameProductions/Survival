@@ -15,12 +15,21 @@ public class Inventory implements Graphic {
         items = new InventorySlot[54];
 
         for (int i = 0; i < 54; i++) {
-            int y = Math.floorDiv(i, 9);
+            int y = (int)floorDiv(i, 9);
             int x = i % 9;
             items[i] = new InventorySlot(x, y, uiHandler);
         }
 
         toolbar = new Toolbar(gameScene, uiHandler, this);
+    }
+
+    public static long floorDiv(long x, long y) {
+        long r = x / y;
+        // if the signs are different and modulo not zero, round down
+        if ((x ^ y) < 0 && (r * y != x)) {
+            r--;
+        }
+        return r;
     }
 
     @Override

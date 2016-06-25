@@ -34,7 +34,7 @@ public class GameClient {
         this.serverPort = serverPort;
 
 
-        this.connections = new ArrayList<>();
+        this.connections = new ArrayList<GameClientConnection>();
         this.gameScene = gameScene;
 
         TCPListener = new ClientTCPListener(this, serverIp, serverPort);

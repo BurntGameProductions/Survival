@@ -32,7 +32,7 @@ public class StoneGenerator {
         for(Tile.TileType t: allowedTiles){
             if (tile.getType().equals(t)){
 
-                ArrayList<GameObject> gameObjects = new ArrayList<>();
+                ArrayList<GameObject> gameObjects = new ArrayList<GameObject>();
                 gameObjects.addAll(gameScene.getGameObjects());
                 gameObjects.addAll(gameScene.getGameObjectsToAdd());
 

@@ -30,7 +30,7 @@ public abstract class DestroyableGameObject extends GameObject {
     }
 
     private void setup() {
-        drops = new ArrayList<>();
+        drops = new ArrayList<EntityItem>();
     }
 
     @Override
