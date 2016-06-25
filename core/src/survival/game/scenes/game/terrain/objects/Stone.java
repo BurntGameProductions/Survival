@@ -22,8 +22,10 @@ public class Stone extends DestroyableGameObject {
         this.gameScene = gameScene;
 
         texture = Textures.OBJECT_STONE.getTexture();
+        Random rand = new Random();
+        int dropnumber = rand.nextInt(5) + 1;
 
-        for (int i = 0; i < new Random().nextInt(5); i++) {
+        for (int i = 0; i < dropnumber; i++) {
             drops.add(new EntityStone(gameScene, Material.STONE));
         }
     }
