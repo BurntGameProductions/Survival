@@ -4,6 +4,7 @@ import com.badlogic.gdx.graphics.Texture;
 
 public enum Material {
     STONE(new Texture("images/items/rock.png"), 50, "Stone"),
+    IRON(new Texture("images/objects/iron.png"), 50, "Iron"),
     TORCH(new Texture("images/items/torch.png"), 1, "Torch");
 
     private Texture texture;
