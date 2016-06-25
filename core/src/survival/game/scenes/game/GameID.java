@@ -5,6 +5,7 @@ public enum GameID {
 
     STONE,
     ENTITY_STONE,
+    ENTITY_IRON,
 
     TREE,
     ENTITY_TREE,
