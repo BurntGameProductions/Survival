@@ -1,71 +1,54 @@
 package survival.game.scenes.game.terrain.generators;
 
+import com.badlogic.gdx.math.Vector2;
 import survival.game.scenes.game.GameScene;
+import survival.game.scenes.game.terrain.objects.GameObject;
 import survival.game.scenes.game.terrain.objects.Tree;
+import survival.game.scenes.game.terrain.tiles.Tile;
 
-public class TreeGenerator extends ObjectGenerator {
+import java.util.ArrayList;
+import java.util.Random;
 
+public class TreeGenerator {
+	
+	private static final int MAX_TREE_COUNT = 600;
 
-    public TreeGenerator(GameScene gameScene) {
-        super(gameScene);
+	public static Tree generate(Tile[][] map, GameScene gameScene) {
 
-        /*for (int i = 0; i < 200; i++) {
-            gameScene.addGameObject(generate());
-        }*/
+	int width = map.length;
+	int height = map[0].length;
 
-    }
+	Tile.TileType[] allowedTiles = {
+		Tile.TileType.GRASS,
+		Tile.TileType.DIRT
+	};
 
-    @Override
-    public Tree generate() {
+	Random random = new Random();
 
-        /*Random random = new Random();
+	int x = random.nextInt(width);
+	int y = random.nextInt(height);
 
-        ArrayList<Vector2> cellPositions = new ArrayList<>();
+	Tile tile = map[x][y];
 
-        TiledMapTileLayer layer = (TiledMapTileLayer) gameScene.getTerrain().getMap().getLayers().get("treeSpawnArea");
+	for(Tile.TileType t: allowedTiles){
+		if (tile.getType().equals(t)){
 
-        for (int x = 0; x < layer.getWidth(); x++) {
-            for (int y = 0; y < layer.getHeight(); y++) {
-                if (layer.getCell(x, y) != null) cellPositions.add(new Vector2(x, y));
-            }
-        }
+			ArrayList<GameObject> gameObjects = new ArrayList<GameObject>();
+			gameObjects.addAll(gameScene.getGameObjects());
+			gameObjects.addAll(gameScene.getGameObjectsToAdd());
 
-        boolean foundProperLocation = true;
-        Vector2 pos = cellPositions.get(random.nextInt(cellPositions.size()));
+			for(GameObject g: gameObjects){
+				if(g.getPosition().epsilonEquals(new Vector2(x, y), 1)){
+					return generate(map, gameScene);
+				}
+			}
 
-        for (GameObject g : gameScene.getGameObjects()) {
+			return new Tree(x, y, gameScene);
+		}
+	}
+	
+	// Try again
+	return generate(map, gameScene);
 
-            for (int x = -2; x < 2; x++) {
-                for (int y = -2; y < 2; y++) {
-                    if (g.getPosition().x == pos.x + x && g.getPosition().y == pos.y + y) {
-                        foundProperLocation = false;
-                        break;
-                    }
-                }
-            }
-
-            for (GameObject stones : gameScene.getGameObjects()) {
-
-                for (int x = -2; x < 2; x++) {
-                    for (int y = -2; y < 2; y++) {
-
-                        if (stones.getPosition().x == pos.x + x && stones.getPosition().y == pos.y + y) {
-                            foundProperLocation = false;
-                            break;
-                        }
-
-                    }
-                }
-
-            }
-
-        }
-
-        if(foundProperLocation){
-            return new Tree((int) pos.x, (int) pos.y, gameScene);
-        } else return generate();
-        */
-
-        return null;
-    }
+	}
 }
